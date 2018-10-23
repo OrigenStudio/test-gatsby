@@ -17,5 +17,11 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline',
+    {
+      resolve: `gatsby-plugin-layout`,
+      options: {
+        component: require.resolve(`./src/layouts/AppLayout.jsx`),
+      },
+    },
   ],
-}
+};
