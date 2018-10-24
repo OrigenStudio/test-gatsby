@@ -2,7 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
 
+import theme from '../config/theme';
 import AppIntlProvider from '../components/AppIntlProvider';
 
 const Layout = ({ children, ...props }) => (
@@ -27,7 +30,10 @@ const Layout = ({ children, ...props }) => (
         >
           <html lang="en" />
         </Helmet>
-        <AppIntlProvider {...props}>{children}</AppIntlProvider>
+        <CssBaseline />
+        <MuiThemeProvider theme={theme}>
+          <AppIntlProvider {...props}>{children}</AppIntlProvider>
+        </MuiThemeProvider>
       </>
     )}
   />
