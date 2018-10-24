@@ -1,6 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: 'MTK Space',
+    address: {
+      line1: 'C/Anselm Clavé 17, Nau 15',
+      line2: 'Sant Feliu de Llobregat (08980)',
+    },
     email: 'hello@mtkspace.com',
     socialNetworks: [
       {
