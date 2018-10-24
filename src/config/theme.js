@@ -7,10 +7,10 @@ const defaultFontColor = ['#333333'];
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main: '#EC233B',
+      main: '#EC2893',
     },
     secondary: {
-      main: '#F2F2F2',
+      main: '#FFF',
     },
   },
   typography: {
@@ -52,21 +52,19 @@ const theme = createMuiTheme({
       fontWeight: '400',
       color: [defaultFontColor],
     },
-    body1: {
+    body2: {
       fontFamily: ['Lora', ...baseFontFamily],
       fontDisplay: 'swap',
       fontWeight: '400',
       lineHeight: '2',
-      fontSize: '1.3rem',
-      paddingBottom: '25px',
+      fontSize: '1.2rem',
       color: [defaultFontColor],
     },
-    body2: {
+    body1: {
       fontFamily: baseFontFamily,
       fontDisplay: 'swap',
-      lineHeight: '2',
-      fontSize: '1.1rem',
-      paddingBottom: '25px',
+      lineHeight: '1.5',
+      fontSize: '1rem',
       color: [defaultFontColor],
     },
     caption: {
