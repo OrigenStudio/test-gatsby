@@ -20,11 +20,11 @@ const socialNetworksIcons = {
 const IndexPage = ({ classes, data }) => (
   <div className={classes.root}>
     <div className={classes.imageWrapper}>
-      <Image {...data.image.childImageSharp} />
+      <Image {...data.image.childImageSharp} className={classes.image}/>
     </div>
     <div className={classes.infoWrapper}>
       <Typography
-        variant="h5"
+        variant="h6"
         className={classNames(classes.text, classes.title, classes.infoItem)}
       >
         <FormattedMessage id="comingSoon.title" />
@@ -83,6 +83,7 @@ export default withStyles(theme => ({
     width: '100vw',
     '& > *': {
       maxWidth: 400,
+      padding: `0 ${theme.spacing.unit * 2}px`,
     },
     [theme.breakpoints.down('xs')]: {
       flexFlow: 'column',
@@ -90,14 +91,15 @@ export default withStyles(theme => ({
   },
   imageWrapper: {
     width: '100%',
-    maxWidth: 200,
+    maxWidth: 200 + theme.spacing.unit * 2,
     [theme.breakpoints.up('md')]: {
-      maxWidth: 225,
+      maxWidth: 225 + theme.spacing.unit * 2,
     },
     [theme.breakpoints.up('lg')]: {
-      maxWidth: 250,
+      maxWidth: 250 + theme.spacing.unit * 2,
     },
   },
+  image: {},
   infoWrapper: {
     marginTop: theme.spacing.unit * 10,
     [theme.breakpoints.down('xs')]: {
