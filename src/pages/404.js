@@ -1,5 +1,11 @@
 import React from 'react';
+import { navigate } from 'gatsby';
+import lifecycle from 'recompose/lifecycle';
 
-const NotFoundPage = () => <h1>NOT FOUND</h1>;
+const NotFoundPage = () => null;
 
-export default NotFoundPage;
+export default lifecycle({
+  componentDidMount() {
+    navigate('/', { replace: true });
+  },
+})(NotFoundPage);
