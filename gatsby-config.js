@@ -23,5 +23,14 @@ module.exports = {
         component: require.resolve(`./src/layouts/AppLayout.jsx`),
       },
     },
+    {
+      resolve: 'gatsby-source-prismic',
+      options: {
+        repositoryName: 'mtk-space',
+        accessToken:
+          'MC5XODlLdlJRQUFQUUw1WHRR.77-9Dk_vv73vv71sZ--_vQMQ77-977-977-977-9WW4EJT7vv71hdnIy77-9U--_vXI3C--_vTg',
+        lang: '*',
+      },
+    },
   ],
 };
