@@ -27,8 +27,8 @@ module.exports = {
         name: 'MTK Space',
         short_name: 'MTK',
         start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
+        background_color: '#1E2424',
+        theme_color: '#EC2893',
         display: 'minimal-ui',
         icon: 'src/images/MTK-logo.png', // This path is relative to the root of the site.
       },
