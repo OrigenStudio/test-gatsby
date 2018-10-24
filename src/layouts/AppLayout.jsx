@@ -31,8 +31,8 @@ const Layout = ({ children, ...props }) => (
         >
           <html lang="en" />
         </Helmet>
-        <CssBaseline />
         <MuiThemeProvider theme={theme}>
+          <CssBaseline />
           <MaterialUILayout>
             <AppIntlProvider {...props}>{children}</AppIntlProvider>
           </MaterialUILayout>
