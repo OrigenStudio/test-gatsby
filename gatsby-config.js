@@ -1,6 +1,17 @@
 module.exports = {
   siteMetadata: {
     title: 'MTK Space',
+    email: 'hello@mtkspace.com',
+    socialNetworks: [
+      {
+        name: 'facebook',
+        url: 'https://www.facebook.com/mtkspace/',
+      },
+      {
+        name: 'instagram',
+        url: 'https://www.instagram.com/mtk_space/',
+      },
+    ],
   },
   plugins: [
     'gatsby-plugin-react-helmet',
