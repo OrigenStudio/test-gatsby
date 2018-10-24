@@ -74,11 +74,11 @@ const IndexPage = ({ classes, data }) => (
 
 export default withStyles(theme => ({
   root: {
+    log: console.log(theme),
     display: 'flex',
     flexFlow: 'row wrap',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#1E2424',
     height: '100vh',
     width: '100vw',
     '& > *': {
