@@ -19,6 +19,8 @@ exports.onCreatePage = ({ page, actions }) => {
         path: localizedPath,
         context: {
           locale,
+          localeId: locale.id,
+          prismicLocaleId: locale.prismicLocale || locale.id,
         },
       })
     );
