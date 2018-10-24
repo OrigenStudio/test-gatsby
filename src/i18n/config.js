@@ -4,12 +4,13 @@ module.exports = {
     {
       id: 'es',
       path: 'es',
-      locale: 'Spanish',
+      name: 'Spanish',
+      prismicLocale: 'es-es',
     },
     {
       id: 'ca',
       path: 'ca',
-      locale: 'Catalan',
+      name: 'Catalan',
     },
   ],
 };
