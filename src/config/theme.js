@@ -44,7 +44,6 @@ const theme = createMuiTheme({
       fontFamily: baseFontFamily,
       fontDisplay: 'swap',
       fontWeight: '600',
-      paddingBottom: '25px',
     },
     subtitle1: {
       fontFamily: ['Lora', ...baseFontFamily],
