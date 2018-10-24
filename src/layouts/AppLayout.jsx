@@ -4,6 +4,7 @@ import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
+import MaterialUILayout from 'material-ui-layout';
 
 import theme from '../config/theme';
 import AppIntlProvider from '../components/AppIntlProvider';
@@ -32,7 +33,9 @@ const Layout = ({ children, ...props }) => (
         </Helmet>
         <CssBaseline />
         <MuiThemeProvider theme={theme}>
-          <AppIntlProvider {...props}>{children}</AppIntlProvider>
+          <MaterialUILayout>
+            <AppIntlProvider {...props}>{children}</AppIntlProvider>
+          </MaterialUILayout>
         </MuiThemeProvider>
       </>
     )}
