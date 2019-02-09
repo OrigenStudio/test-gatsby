@@ -1,4 +1,6 @@
 const path = require(`path`);
+const theme = require('./src/config/theme').default;
+
 
 module.exports = {
   siteMetadata: {
@@ -21,6 +23,12 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
+    {
+      resolve: `@wapps/gatsby-plugin-material-ui`,
+      options: {
+        theme: theme,
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

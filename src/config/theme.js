@@ -1,5 +1,11 @@
-import { createMuiTheme } from '@material-ui/core/styles';
-import each from 'lodash/each';
+// This file has to use vanilla JS
+// Because is used by gatsby-config.js to set up the theme.
+// --------
+// Currently the @wapps/gatsby-plugin-material-ui package is creating the theme again.
+// We need to be aware if something breaks on the theme or styles can be caused by this.
+
+const { createMuiTheme } = require('@material-ui/core/styles');
+const each = require('lodash/each');
 
 const baseFontFamily = ['Montserrat', 'sans-serif'];
 const defaultFontColor = ['#333333'];
@@ -116,7 +122,7 @@ theme.typography.display3 = {
   fontSize: '1.8rem',
 };
 
-export default theme;
+
 
 // TODO move somewhere else as useful snippet
 const makeResponsive = (theme, jssHandle, values) => ({
@@ -135,4 +141,7 @@ const makeResponsive = (theme, jssHandle, values) => ({
   },
 });
 
-export { makeResponsive };
+module.exports = {
+  default: theme,
+  makeResponsive: makeResponsive,
+};
