@@ -1088,6 +1088,13 @@
   resolved "https://registry.yarnpkg.com/@types/tmp/-/tmp-0.0.32.tgz#0d3cb31022f8427ea58c008af32b80da126ca4e3"
   integrity sha1-DTyzECL4Qn6ljACK8yuA2hJspOM=
 
+"@wapps/gatsby-plugin-material-ui@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@wapps/gatsby-plugin-material-ui/-/gatsby-plugin-material-ui-1.2.0.tgz#b85dce11aabbed66f4d8ffdb15f2740345be512d"
+  integrity sha512-Yd0cgVFKRc5xPLmUjvGeGg5YCabfQxs/sMWu7izj7S6x7uj9eKz6swjd1W32ygYSJ82OAasBwcnF1vDF4QYhJw==
+  dependencies:
+    react-jss "^8.6.1"
+
 "@webassemblyjs/ast@1.7.11":
   version "1.7.11"
   resolved "https://registry.yarnpkg.com/@webassemblyjs/ast/-/ast-1.7.11.tgz#b988582cafbb2b095e8b556526f30c90d057cace"
@@ -9748,7 +9755,7 @@ react-is@^16.6.3, react-is@^16.7.0:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.8.1.tgz#a80141e246eb894824fb4f2901c0c50ef31d4cdb"
   integrity sha512-ioMCzVDWvCvKD8eeT+iukyWrBGrA3DiFYkXfBsVYIRdaREZuBjENG+KjrikavCLasozqRWTwFUagU/O4vPpRMA==
 
-react-jss@^8.1.0:
+react-jss@^8.1.0, react-jss@^8.6.1:
   version "8.6.1"
   resolved "https://registry.yarnpkg.com/react-jss/-/react-jss-8.6.1.tgz#a06e2e1d2c4d91b4d11befda865e6c07fbd75252"
   integrity sha512-SH6XrJDJkAphp602J14JTy3puB2Zxz1FkM3bKVE8wON+va99jnUTKWnzGECb3NfIn9JPR5vHykge7K3/A747xQ==
